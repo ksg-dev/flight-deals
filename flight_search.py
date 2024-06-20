@@ -7,7 +7,8 @@ class FlightSearch:
         # self.iatacode = self.get_iata(self.city)
 
     def get_iata(self, city):
-        return ("TESTING")
+        iataCode = "TESTING"
+        return iataCode
 
 
 #
