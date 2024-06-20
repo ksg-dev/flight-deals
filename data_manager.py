@@ -1,33 +1,40 @@
 import requests
+import os
+from dotenv import load_dotenv
+from requests.auth import HTTPBasicAuth
+
+load_dotenv()
+
+SHEETY_ENDPOINT="https://api.sheety.co/e938eee05710f2891def63457d60664d/flightDeals/prices"
+
+
 class DataManager:
     #This class is responsible for talking to the Google Sheet.
     def __init__(self):
-        self.endpoint = "https://api.sheety.co/e938eee05710f2891def63457d60664d/flightDeals/prices"
-        # self.data = {
-        #     "price": {
-        #         "city": city,
-        #         "iataCode": iata,
-        #         "lowestPrice": price
-        #     }
-        # }
+        self._user = os.environ["SH_USER"]
+        self._password = os.environ["SH_PASSWORD"]
+        self._auth = HTTPBasicAuth(self._user, self._password)
+        self.destination_data = {}
 
     def get_data(self):
-        response = requests.get(url=self.endpoint)
+        response = requests.get(url=SHEETY_ENDPOINT, auth=self._auth)
         data = response.json()
         # print(f"data: {data}")
-        prices = data["prices"]
-        return prices
+        self.destination_data = data["prices"]
+        return self.destination_data
 
     def add_data(self):
-        add_row = requests.post(url=self.endpoint, )
+        add_row = requests.post(url=SHEETY_ENDPOINT, auth=self._auth)
 
-    def update_data(self, row_id, update_json):
-        # update_json = {
-        #     "price": {
-        #         "city": city,
-        #         "iataCode": iata,
-        #         "lowestPrice": lowest_price
-        #
-        #     }
-        # }
-        requests.put(url=f"{self.endpoint}/{row_id}", json=update_json)
+    def update_data(self):
+        for row in self.destination_data:
+            update = {
+                "price": {
+                    "iataCode": row["iataCode"],
+                }
+            }
+            response = requests.put(
+                url=f"{SHEETY_ENDPOINT}/{row['id']}",
+                json=update,
+                auth=self._auth
+            )
