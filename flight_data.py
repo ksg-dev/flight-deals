@@ -6,6 +6,7 @@ from flight_search import FlightSearch
 
 FLIGHT_OFFERS_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
 
+
 class FlightData:
     def __init__(self):
         self.price = 0
@@ -23,25 +24,45 @@ class FlightData:
             "Authorization": f"Bearer {self._token}"
         }
 
-        o_destinations = {
-            "originLocationCode": self.departure_code,
-            "destinationLocationCode": destination_iata,
-            "departureDateTimeRange": {
-                "date": tomorrow,
-            }
-        }
+        # parameters = {
+        #     "originLocationCode": self.departure_code,
+        #     "destinationLocationCode": destination_iata,
+        #     "departureDate": tomorrow,
+        #     "dateWindow": "P180D",
+        #     "nonStop": "true",
+        #     "currencyCode": "USD",
+        #     "adults": 1,
+        #     "oneWay": "false"
+        #     }
 
-        body = {
+        # response = requests.get(url=FLIGHT_OFFERS_ENDPOINT, headers=header, params=parameters)
+        # print(response.status_code)
+        # data = response.json()
+        # print(data)
+
+        post_params = {
             "currencyCode": "USD",
-            "originDestinations": o_destinations,
-            "travelers": {
-                "id": "1",
-                "travelerType": "ADULT"
-                },
-            "sources": "GDS"
+            "originDestinations": [
+                {
+                    "id": "1",
+                    "originLocationCode": "LON",
+                    "destinationLocationCode": destination_iata,
+                    "departureDateTimeRange": {
+                        "date": tomorrow,
+                        # "dateWindow": "P180D"
+                    }
+                }
+              ],
+            "travelers": [
+                {
+                    "id": "1",
+                    "travelerType": "ADULT"
+                }
+              ],
+            "sources": ["GDS"]
             }
 
-        response = requests.post(url=FLIGHT_OFFERS_ENDPOINT, headers=header, data=body)
-        print(response.status_code)
+        response = requests.post(url=FLIGHT_OFFERS_ENDPOINT, headers=header, params=post_params)
         data = response.json()
+        print(response.status_code)
         print(data)

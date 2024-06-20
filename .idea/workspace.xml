@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d93c405-7ff9-4fd8-b15a-9a149e2436e7" name="Changes" comment="fill sheet w iata code add error handling for no city found">
+    <list default="true" id="3d93c405-7ff9-4fd8-b15a-9a149e2436e7" name="Changes" comment="flight data w post request before rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flight_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_data.py" afterDir="false" />
     </list>
@@ -77,7 +77,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718912111024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working out flight data dict">
+      <option name="closed" value="true" />
+      <created>1718913520530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718913520530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="flight data w post request before rework">
+      <option name="closed" value="true" />
+      <created>1718915238132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718915238132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -85,6 +101,8 @@
     <MESSAGE value="clean up and add basic authorization" />
     <MESSAGE value="get token, make api request for iatacode" />
     <MESSAGE value="fill sheet w iata code add error handling for no city found" />
-    <option name="LAST_COMMIT_MESSAGE" value="fill sheet w iata code add error handling for no city found" />
+    <MESSAGE value="working out flight data dict" />
+    <MESSAGE value="flight data w post request before rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="flight data w post request before rework" />
   </component>
 </project>
