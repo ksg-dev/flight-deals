@@ -41,13 +41,18 @@ class FlightSearch:
         params = {
             "keyword": city
         }
-        response = requests.get(url=AM_GET_BY_CITY_ENDPOINT, headers=header, params=params)
-        data = response.json()
-        # print(f"data: {data}")
+        try:
+            response = requests.get(url=AM_GET_BY_CITY_ENDPOINT, headers=header, params=params)
+            data = response.json()
+            # print(f"data: {data}")
 
-        iataCode = data["data"][0]["iataCode"]
-        # print(iataCode)
-        return iataCode
+            iataCode = data["data"][0]["iataCode"]
+            # print(iataCode)
+        except KeyError:
+            print("City not found")
+            iataCode = ""
+        finally:
+            return iataCode
 
 
 #

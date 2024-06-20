@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d93c405-7ff9-4fd8-b15a-9a149e2436e7" name="Changes" comment="clean up and add basic authorization">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3d93c405-7ff9-4fd8-b15a-9a149e2436e7" name="Changes" comment="get token, make api request for iatacode">
       <change beforePath="$PROJECT_DIR$/flight_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718908958318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="get token, make api request for iatacode">
+      <option name="closed" value="true" />
+      <created>1718911795527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718911795527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="clean up and add basic authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up and add basic authorization" />
+    <MESSAGE value="get token, make api request for iatacode" />
+    <option name="LAST_COMMIT_MESSAGE" value="get token, make api request for iatacode" />
   </component>
 </project>
