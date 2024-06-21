@@ -66,8 +66,8 @@ class FlightSearch:
         parameters = {
             "originLocationCode": origin_iata,
             "destinationLocationCode": destination_iata,
-            "departureDate": from_time.strftime("%Y-%m-%d"),
-            "returnDate": to_time.strftime("%Y-%m-%d"),
+            "departureDate": from_time,
+            "returnDate": to_time,
             "nonStop": "true",
             "currencyCode": "GBP",
             "adults": 1,
