@@ -2,10 +2,9 @@
 import os
 from dotenv import load_dotenv
 import requests
-from datetime import datetime
 
-AM_TOKEN_ENDPOINT="https://test.api.amadeus.com/v1/security/oauth2/token"
-AM_GET_BY_CITY_ENDPOINT="https://test.api.amadeus.com/v1/reference-data/locations/cities"
+AM_TOKEN_ENDPOINT = "https://test.api.amadeus.com/v1/security/oauth2/token"
+AM_GET_BY_CITY_ENDPOINT = "https://test.api.amadeus.com/v1/reference-data/locations/cities"
 FLIGHT_OFFERS_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
 
 
@@ -60,10 +59,6 @@ class FlightSearch:
         return iataCode
 
     def get_flights(self, origin_iata, destination_iata, from_time, to_time):
-        today = date.today()
-        tom = today.replace(day=today.day + 1)
-        tomorrow = tom.isoformat()
-
         header = {
             "Authorization": f"Bearer {self._token}"
         }
