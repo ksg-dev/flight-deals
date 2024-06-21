@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d93c405-7ff9-4fd8-b15a-9a149e2436e7" name="Changes" comment="tweak to api call for flight offers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flight_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/flight_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

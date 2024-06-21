@@ -1,8 +1,18 @@
+import os
 import time
 from datetime import date
 from data_manager import DataManager
 from flight_search import FlightSearch
 from flight_data import find_cheapest_flight
+from twilio.rest import Client
+from dotenv import load_dotenv
+
+load_dotenv()
+TW_SID = os.environ["TWILIO_ACCOUNT_SID"]
+TW_AUTH = os.environ["TWILIO_AUTH_TOKEN"]
+TW_FROM = os.environ["FROM_NO"]
+TW_TO = os.environ["TO_NO"]
+client = Client(TW_SID, TW_AUTH)
 
 # ================ SET UP FLIGHT SEARCH ================ #
 sheet = DataManager()
@@ -47,6 +57,23 @@ for destination in sheet_data:
     print(f"{destination['city']}: £{cheapest_flight.price}")
     # Slow down requests to avoid api limit as suggested
     time.sleep(2)
+    try:
+        if destination["lowestPrice"] > float(cheapest_flight.price):
+            compose_msg = (f"We found a cheaper flight!\n"
+                           f"Fly from {cheapest_flight.origin_airport} "
+                           f"To {cheapest_flight.dest_airport} for only £{cheapest_flight.price}!\n"
+                           f"Depart Date: {cheapest_flight.depart_date}\n"
+                           f"Return Date: {cheapest_flight.return_date}")
 
+            message = client.messages.create(
+                body=compose_msg,
+                from_=TW_FROM,
+                to=TW_TO
+            )
+            # print(message.body)
+    except TypeError:
+        pass
+    except ValueError:
+        pass
 
 
