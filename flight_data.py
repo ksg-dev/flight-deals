@@ -1,12 +1,13 @@
 # This class is responsible for structuring the flight data.
 
 class FlightData:
-    def __init__(self, price, origin_airport, dest_airport, depart_date, return_date):
+    def __init__(self, price, origin_airport, dest_airport, depart_date, return_date, stops):
         self.price = price
         self.origin_airport = origin_airport
         self.dest_airport = dest_airport
         self.depart_date = depart_date
         self.return_date = return_date
+        self.stops = stops
 
 
 def find_cheapest_flight(data):
@@ -31,7 +32,7 @@ def find_cheapest_flight(data):
     # Handle empty data or api rate limit exceeded
     if data is None or not data["data"]:
         print("No flight data")
-        return FlightData("N/A", "N/A", "N/A", "N/A", "N/A")
+        return FlightData("N/A", "N/A", "N/A", "N/A", "N/A", "N/A")
 
     # Data from first flight in json
     first_flight = data["data"][0]
@@ -40,9 +41,10 @@ def find_cheapest_flight(data):
     destination = first_flight["itineraries"][0]["segments"][0]["arrival"]["iataCode"]
     depart_date = first_flight["itineraries"][0]["segments"][0]["departure"]["at"].split("T")[0]
     return_date = first_flight["itineraries"][1]["segments"][0]["departure"]["at"].split("T")[0]
+    num_stops = first_flight["itineraries"][0]["segments"][0]["numberOfStops"]
 
     # Initialize FlightData with the first flight for comparison
-    cheapest_flight = FlightData(lowest_price, origin, destination, depart_date, return_date)
+    cheapest_flight = FlightData(lowest_price, origin, destination, depart_date, return_date, num_stops)
 
     for flight in data["data"]:
         price = float(flight["price"]["grandTotal"])
@@ -52,7 +54,8 @@ def find_cheapest_flight(data):
             destination = flight["itineraries"][0]["segments"][0]["arrival"]["iataCode"]
             depart_date = flight["itineraries"][0]["segments"][0]["departure"]["at"].split("T")[0]
             return_date = flight["itineraries"][1]["segments"][0]["departure"]["at"].split("T")[0]
-            print(f"Lowest price to {destination} is £{lowest_price}")
+            num_stops = first_flight["itineraries"][0]["segments"][0]["numberOfStops"]
+            print(f"Lowest price to {destination} is £{lowest_price} with {num_stops} stops")
 
     return cheapest_flight
 

@@ -58,23 +58,43 @@ class FlightSearch:
             return "Not Found"
         return iataCode
 
-    def get_flights(self, origin_iata, destination_iata, from_time, to_time):
+    def get_flights(self, origin_iata, destination_iata, from_time, to_time, is_direct=True):
         header = {
             "Authorization": f"Bearer {self._token}"
         }
 
-        parameters = {
-            "originLocationCode": origin_iata,
-            "destinationLocationCode": destination_iata,
-            "departureDate": from_time,
-            "returnDate": to_time,
-            "nonStop": "true",
-            "currencyCode": "GBP",
-            "adults": 1,
-            "max": "10"
+        if is_direct is True:
+            parameters = {
+                "originLocationCode": origin_iata,
+                "destinationLocationCode": destination_iata,
+                "departureDate": from_time,
+                "returnDate": to_time,
+                "nonStop": "true",
+                "currencyCode": "GBP",
+                "adults": 1,
+                "max": "10"
+                }
+        else:
+            parameters = {
+                "originLocationCode": origin_iata,
+                "destinationLocationCode": destination_iata,
+                "departureDate": from_time,
+                "returnDate": to_time,
+                "nonStop": "false",
+                "currencyCode": "GBP",
+                "adults": 1,
+                "max": "10"
             }
 
         response = requests.get(url=FLIGHT_OFFERS_ENDPOINT, headers=header, params=parameters)
+        # print(response.json())
+        # flights = response.json()
+        # num_flights = flights["meta"]["count"]
+        # check = 0
+        # if num_flights == 0 and check == 0:
+        #     self.get_flights(origin_iata, destination_iata, from_time, to_time, is_direct=False)
+        #     check += 1
+        # print(f"num_flights = {num_flights}")
 
         if response.status_code != 200:
             print(f"check_flights() response code: {response.status_code}")

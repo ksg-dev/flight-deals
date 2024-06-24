@@ -1,0 +1,1347 @@
+{
+  'data': [
+    {
+      'type': 'flight-offer',
+      'id': '1',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T10:00:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T11:20:00'
+              },
+              'carrierCode': 'EI',
+              'number': '158',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '2',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '2',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '2',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T12:05:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T13:25:00'
+              },
+              'carrierCode': 'EI',
+              'number': '164',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '3',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '3',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '3',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T13:05:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T14:25:00'
+              },
+              'carrierCode': 'EI',
+              'number': '166',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '4',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '4',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '4',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T14:15:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T15:35:00'
+              },
+              'carrierCode': 'EI',
+              'number': '168',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '5',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '5',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '5',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T15:30:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '172',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '6',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '6',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '6',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T16:30:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T17:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '174',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '7',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '7',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '7',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H20M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T18:30:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T19:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '178',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H20M',
+              'id': '8',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '8',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '8',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H25M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T08:55:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T10:20:00'
+              },
+              'carrierCode': 'EI',
+              'number': '156',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H25M',
+              'id': '11',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '172.58',
+        'base': '85.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '172.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '172.58',
+            'base': '85.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '11',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '9',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H25M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T06:40:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T08:05:00'
+              },
+              'carrierCode': 'EI',
+              'number': '152',
+              'aircraft': {
+                'code': '32N'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H25M',
+              'id': '9',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '188.58',
+        'base': '101.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '188.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '188.58',
+            'base': '101.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '9',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'ZUK23GDS',
+              'class': 'Z',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      'type': 'flight-offer',
+      'id': '10',
+      'source': 'GDS',
+      'instantTicketingRequired': False,
+      'nonHomogeneous': False,
+      'oneWay': False,
+      'isUpsellOffer': False,
+      'lastTicketingDate': '2024-06-25',
+      'lastTicketingDateTime': '2024-06-25',
+      'numberOfBookableSeats': 1,
+      'itineraries': [
+        {
+          'duration': 'PT1H35M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'LGW',
+                'terminal': 'S',
+                'at': '2024-06-25T15:15:00'
+              },
+              'arrival': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-06-25T16:50:00'
+              },
+              'carrierCode': 'EI',
+              'number': '237',
+              'aircraft': {
+                'code': '320'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H35M',
+              'id': '1',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        },
+        {
+          'duration': 'PT1H25M',
+          'segments': [
+            {
+              'departure': {
+                'iataCode': 'DUB',
+                'terminal': '2',
+                'at': '2024-12-24T07:40:00'
+              },
+              'arrival': {
+                'iataCode': 'LHR',
+                'terminal': '2',
+                'at': '2024-12-24T09:05:00'
+              },
+              'carrierCode': 'EI',
+              'number': '154',
+              'aircraft': {
+                'code': '32Q'
+              },
+              'operating': {
+                'carrierCode': 'EI'
+              },
+              'duration': 'PT1H25M',
+              'id': '10',
+              'numberOfStops': 0,
+              'blacklistedInEU': False
+            }
+          ]
+        }
+      ],
+      'price': {
+        'currency': 'GBP',
+        'total': '188.58',
+        'base': '101.00',
+        'fees': [
+          {
+            'amount': '0.00',
+            'type': 'SUPPLIER'
+          },
+          {
+            'amount': '0.00',
+            'type': 'TICKETING'
+          }
+        ],
+        'grandTotal': '188.58'
+      },
+      'pricingOptions': {
+        'fareType': [
+          'PUBLISHED'
+        ],
+        'includedCheckedBagsOnly': True
+      },
+      'validatingAirlineCodes': [
+        'EI'
+      ],
+      'travelerPricings': [
+        {
+          'travelerId': '1',
+          'fareOption': 'STANDARD',
+          'travelerType': 'ADULT',
+          'price': {
+            'currency': 'GBP',
+            'total': '188.58',
+            'base': '101.00'
+          },
+          'fareDetailsBySegment': [
+            {
+              'segmentId': '1',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'GUK23GDS',
+              'class': 'G',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            },
+            {
+              'segmentId': '10',
+              'cabin': 'ECONOMY',
+              'fareBasis': 'ZUK23GDS',
+              'class': 'Z',
+              'includedCheckedBags': {
+                'weight': 20,
+                'weightUnit': 'KG'
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  'dictionaries': {
+    'locations': {
+      'DUB': {
+        'cityCode': 'DUB',
+        'countryCode': 'IE'
+      },
+      'LHR': {
+        'cityCode': 'LON',
+        'countryCode': 'GB'
+      },
+      'LGW': {
+        'cityCode': 'LON',
+        'countryCode': 'GB'
+      }
+    },
+    'aircraft': {
+      '320': 'AIRBUS A320',
+      '32Q': 'AIRBUS A321NEO',
+      '32N': 'AIRBUS A320NEO'
+    },
+    'currencies': {
+      'GBP': 'POUND STERLING'
+    },
+    'carriers': {
+      'EI': 'AER LINGUS'
+    }
+  },
+  'meta': {
+    'count': 10,
+    'links': {
+      'self': 'https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=LON&destinationLocationCode=DUB&departureDate=2024-06-25&returnDate=2024-12-24&nonStop=true&currencyCode=GBP&adults=1&max=10'
+    }
+  }
+}

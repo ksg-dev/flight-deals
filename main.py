@@ -53,27 +53,37 @@ for destination in sheet_data:
         from_time=tomorrow,
         to_time=six_months
     )
+    if flights["meta"]["count"] == 0:
+        print(f"Checking indirect flights for {destination['city']}...")
+        flights = search.get_flights(
+            origin_iata=ORIGIN_IATA,
+            destination_iata=destination["iataCode"],
+            from_time=tomorrow,
+            to_time=six_months,
+            is_direct=False
+        )
     cheapest_flight = find_cheapest_flight(flights)
     print(f"{destination['city']}: £{cheapest_flight.price}")
     # Slow down requests to avoid api limit as suggested
     time.sleep(2)
-    try:
-        if destination["lowestPrice"] > float(cheapest_flight.price):
-            compose_msg = (f"We found a cheaper flight!\n"
-                           f"Fly from {cheapest_flight.origin_airport} "
-                           f"To {cheapest_flight.dest_airport} for only £{cheapest_flight.price}!\n"
-                           f"Depart Date: {cheapest_flight.depart_date}\n"
-                           f"Return Date: {cheapest_flight.return_date}")
-
-            message = client.messages.create(
-                body=compose_msg,
-                from_=TW_FROM,
-                to=TW_TO
-            )
-            # print(message.body)
-    except TypeError:
-        pass
-    except ValueError:
-        pass
+    # try:
+    #     if destination["lowestPrice"] > float(cheapest_flight.price):
+    #         compose_msg = (f"We found a cheaper flight!\n"
+    #                        f"Fly from {cheapest_flight.origin_airport} "
+    #                        f"To {cheapest_flight.dest_airport} for only £{cheapest_flight.price}!\n"
+    #                        f"Depart Date: {cheapest_flight.depart_date}\n"
+    #                        f"Return Date: {cheapest_flight.return_date}\n"
+    #                        f"Stops: {cheapest_flight.stops}")
+    #
+    #         message = client.messages.create(
+    #             body=compose_msg,
+    #             from_=TW_FROM,
+    #             to=TW_TO
+    #         )
+    #         # print(message.body)
+    # except TypeError:
+    #     pass
+    # except ValueError:
+    #     pass
 
 
